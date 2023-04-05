@@ -44,6 +44,8 @@ declare namespace EventSource {
     proxy?: string | undefined;
     https?: object | undefined;
     rejectUnauthorized?: boolean | undefined;
+	  responseTimeout?: number;
+    onreconnect?: (evt: Event) => any;
   }
 }
 
